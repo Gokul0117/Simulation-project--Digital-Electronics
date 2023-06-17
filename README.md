@@ -56,6 +56,4 @@ endmodule
 
 
 # REFERENCE
-Gokul0117
-/
-Simulation-project--Digital-Electronics
+https://github.com/Gokul0117/Simulation-project--Digital-Electronics/edit/main/README.md
