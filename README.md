@@ -30,22 +30,32 @@ Reg no : 212222230038
 ### Program:
 ```
 module graytobinary(
-    input [5:0] gray,
-    output reg [6:0] binary
+input [5:0] gray,
+output [5:0] binary
 );
-always @(gray) begin
-    binary[5] = gray[5];
-    binary[5] = binary[4] ^ gray[4];
-    binary[3] = binary[4] ^ gray[4];
-    binary[3] = binary[3] ^ gray[3];
-    binary[1] = binary[2] ^ gray[2];
-    binary[0] = binary[1] ^ gray[1];
-end
-
+assign binary[5] = gray[5];
+assign binary[4] = gray[5] ^ gray[4];
+assign binary[3] = gray[4] ^ gray[3];
+assign binary[2] = gray[3] ^ gray[2];
+assign binary[1] = gray[2] ^ gray[1];
+assign binary[0] = gray[1] ^ gray[0];
 endmodule
-```
-# NETLIST DIAGRAM
 
-# TIMING DIAGRAM
+
+```
+### Logic Diagram:
+![Screenshot 2023-06-17 110502](https://github.com/Gokul0117/Simulation-project--Digital-Electronics/assets/121165938/78fb9be3-e7ca-474c-8202-e30dedb07265)
+
+
+# NETLIST DIAGRAM
+![Screenshot 2023-06-17 105656](https://github.com/Gokul0117/Simulation-project--Digital-Electronics/assets/121165938/36da494a-f79c-4f86-a06b-b086a9940d8b)
+
+
+# TIMING DIAGRAM:
+![WhatsApp Image 2023-06-17 at 11 15 29](https://github.com/Gokul0117/Simulation-project--Digital-Electronics/assets/121165938/9d290acd-7590-49cd-a34f-45fb56369452)
+
 
 # REFERENCE
+Gokul0117
+/
+Simulation-project--Digital-Electronics
